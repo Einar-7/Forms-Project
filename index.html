@@ -1,1 +1,75 @@
-index.html
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Forms Project</title>
+    </head>
+    <body>
+        <h1>New Form</h1>
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+                <legend>Add User</legend>
+
+                <div>
+                    <label for="fistName">First Name</label>
+                    <input type="text" id="fistName" name="first_name">
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email_address">
+                </div>
+
+                <div>
+                    <label for="status">Status</label>
+                    <select id="status" name="user_status">
+                        <option value="student">Student</option>
+                        <option value="Instructor">Instructor</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Choose Your Favorite Programming Language</p>
+                    <label for="html">HTML</label>
+                    <input type="radio" id="html" name="html_Lang">
+
+                    <label for="css">CSS</label>
+                    <input type="radio" id="css" name="css_lang">
+
+                    <label for="javaScript">JavaScript</label>
+                    <input type="radio" id="javaScript" name="js_lang">
+                </div>
+
+                <div>
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+
+                <div>
+                    <label for="currentDate"></label>
+                    <input type="date" id="currentDate" name="currentDate">
+                </div>
+
+                <div>
+                    <label for="signUp">Sign Up For Newsletter</label>
+                    <input type="checkbox" id="signUp" name="signUp">
+                </div>
+
+                <div>
+                    <label for="t&c">Agree to terms and conditions</label>
+                    <input type="checkbox" id="t&c" name="terms_and_conditions">
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
